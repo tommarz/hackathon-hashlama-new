@@ -14,7 +14,9 @@
 
         <md-card-actions>
           <md-button>קרא עוד</md-button>
-          <md-button>הרחב מוצר</md-button>
+          <md-button @click="$router.push('/product')">
+            הרחב מוצר
+            </md-button>
         </md-card-actions>
       </md-ripple>
     </md-card>

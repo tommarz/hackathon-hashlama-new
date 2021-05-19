@@ -5,7 +5,7 @@
         <md-card>
           <md-card-header data-background-color="orange">
             <h1 class="title">מוצר #1</h1>
-            <router-link to="user" class="category">
+            <router-link to="userPage" class="category">
               <p id="team-link">נכתב על ידי - צוות 10 ענף תוכנה</p>
             </router-link>
           </md-card-header>
