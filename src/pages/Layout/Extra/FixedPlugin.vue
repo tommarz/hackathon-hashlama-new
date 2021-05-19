@@ -5,7 +5,7 @@
         <i class="fa fa-cog fa-2x" @click="toggleDropDown"> </i>
       </a>
       <ul class="dropdown-menu" :class="{ show: isOpen }">
-        <li class="header-title">Sidebar Filters</li>
+        <li class="header-title">צבע נושא</li>
         <li class="adjustments-line text-center">
           <span
             v-for="item in sidebarColors"
@@ -17,7 +17,7 @@
           >
           </span>
         </li>
-        <li class="header-title">Images</li>
+        <li class="header-title">תמונות רקע</li>
         <li
           v-for="item in sidebarImages"
           :key="item.image"
@@ -29,62 +29,6 @@
           </a>
         </li>
 
-        <li class="button-container">
-          <div class="">
-            <md-button
-              class="md-success md-block"
-              :href="freeUrl"
-              target="_blank"
-              >Free Download</md-button
-            >
-          </div>
-        </li>
-
-        <li class="button-container">
-          <div class="">
-            <md-button
-              class="md-block md-primary"
-              :href="documentationLink"
-              target="_blank"
-              >Documentation</md-button
-            >
-          </div>
-        </li>
-
-        <li class="header-title d-flex justify-content-center">
-          Thank you for sharing!
-        </li>
-
-        <li class="button-container">
-          <social-sharing
-            :url="shareUrl"
-            inline-template
-            title="Vue Material Dashboard - Admin Template for Vue.js"
-            hashtags="vuejs, dashboard, vuematerial"
-            twitter-user="creativetim"
-          >
-            <div class="centered-buttons">
-              <network
-                network="facebook"
-                class="md-button md-round md-just-icon md-facebook"
-              >
-                <i class="fab fa-facebook-f"></i>
-              </network>
-              <network
-                network="twitter"
-                class="md-button md-round md-just-icon md-twitter"
-              >
-                <i class="fab fa-twitter"></i>
-              </network>
-            </div>
-          </social-sharing>
-        </li>
-        <li class="github-buttons">
-          <gh-btns-star
-            slug="creativetimofficial/vue-material-dashboard"
-            show-count
-          ></gh-btns-star>
-        </li>
       </ul>
     </div>
   </div>
@@ -109,8 +53,8 @@ export default {
       sidebarColors: [
         { color: "purple", active: false },
         { color: "blue", active: false },
-        { color: "green", active: true },
-        { color: "orange", active: false },
+        { color: "green", active: false },
+        { color: "orange", active: true },
         { color: "red", active: false }
       ],
       sidebarImages: [
