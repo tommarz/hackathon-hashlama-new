@@ -15,6 +15,10 @@
         <md-icon>person</md-icon>
         <p>User Profile</p>
       </sidebar-link>
+      <sidebar-link to="/feed">
+        <md-icon>wallpaper</md-icon>
+        <p>Feed</p>
+      </sidebar-link>
     </side-bar>
 
     <div class="main-panel">
@@ -50,7 +54,7 @@ export default {
   },
   data() {
     return {
-      sidebarBackground: "green",
+      sidebarBackground: "orange",
       sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg")
     };
   }

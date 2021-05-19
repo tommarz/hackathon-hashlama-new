@@ -2,6 +2,7 @@ import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
 import UserProfile from "@/pages/UserProfile.vue";
+import Feed from "@/pages/Feed.vue"
 import TableList from "@/pages/TableList.vue";
 import Typography from "@/pages/Typography.vue";
 import Icons from "@/pages/Icons.vue";
@@ -24,6 +25,11 @@ const routes = [
         path: "user",
         name: "User Profile",
         component: UserProfile
+      },
+      {
+        path: "feed",
+        name: "Feed",
+        component: Feed
       }
     ]
   }
