@@ -1,6 +1,6 @@
 <template>
   <form>
-    <md-card>
+    <md-card dir="rtl">
       <md-card-header data-background-color="orange">
         <h4 class="title">פרופיל צוות</h4>
         <p class="category">בואו נתחיל לבנות את הפרופיל שלכם</p>
@@ -112,4 +112,5 @@ export default {
   }
 };
 </script>
-<style></style>
+<style>
+</style>
