@@ -1,5 +1,5 @@
 <template>
-  <div class="add-product">
+  <div class="add-product" dir="rtl">
     <form novalidate class="md-layout" @submit.prevent="validateProduct">
       <md-card class="md-layout-item md-size-50 md-small-size-100">
         <md-card-header>
@@ -82,7 +82,7 @@
 
         <md-card-actions>
           <md-button type="submit" class="md-primary" :disabled="sending"
-            >Create product</md-button
+            >הוסף מוצר</md-button
           >
         </md-card-actions>
       </md-card>
@@ -216,6 +216,19 @@ export default {
 }
 .md-card {
   text-align: center;
+}
+.md-button {
+  margin: right;
+  align-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+.md-ripple {
+  margin: right;
+  align-self: center;
+  align-content: center;
+  align-items: center;
 }
 </style>
 
