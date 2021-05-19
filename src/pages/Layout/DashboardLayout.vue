@@ -15,6 +15,10 @@
         <md-icon>person</md-icon>
         <p>User Profile</p>
       </sidebar-link>
+      <sidebar-link to="/add-product">
+        <md-icon>fiber_new</md-icon>
+        <p>Add Product</p>
+      </sidebar-link>
     </side-bar>
 
     <div class="main-panel">
@@ -39,6 +43,7 @@ import ContentFooter from "./ContentFooter.vue";
 import DashboardContent from "./Content.vue";
 import MobileMenu from "@/pages/Layout/MobileMenu.vue";
 import FixedPlugin from "./Extra/FixedPlugin.vue";
+import SidebarLink from '../../components/SidebarPlugin/SidebarLink.vue';
 
 export default {
   components: {
@@ -46,7 +51,8 @@ export default {
     DashboardContent,
     ContentFooter,
     MobileMenu,
-    FixedPlugin
+    FixedPlugin,
+    SidebarLink
   },
   data() {
     return {
