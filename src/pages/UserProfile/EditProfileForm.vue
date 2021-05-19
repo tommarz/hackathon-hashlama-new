@@ -70,7 +70,7 @@
             </md-field>
           </div> -->
           <div class="md-layout-item md-size-100 text-right">
-            <md-button class="md-raised md-warning">!זהו נגמר</md-button>
+            <md-button class="md-raised md-warning" @click="this.handleClick">!זהו נגמר</md-button>
           </div>
         </div>
       </md-card-content>
@@ -104,6 +104,11 @@ export default {
       aboutme:
         "Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
     };
+  },
+  methods: {
+    handleClick() {
+      this.$emit('updateIsShowProfile');    
+}
   }
 };
 </script>
