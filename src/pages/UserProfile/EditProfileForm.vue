@@ -20,18 +20,6 @@
               <md-input v-model="emailadress" type="email"></md-input>
             </md-field>
           </div>
-          <!-- <div class="md-layout-item md-small-size-100 md-size-50">
-            <md-field>
-              <label>First Name</label>
-              <md-input v-model="firstname" type="text"></md-input>
-            </md-field>
-          </div>
-          <div class="md-layout-item md-small-size-100 md-size-50">
-            <md-field>
-              <label>Last Name</label>
-              <md-input v-model="lastname" type="text"></md-input>
-            </md-field>
-          </div> -->
           <div class="md-layout-item md-small-size-100 md-size-100">
             <md-field>
       <label>תיאור עשיית הצוות</label>
@@ -57,18 +45,6 @@
             </md-field>
           </div>
           <md-chips v-model="fruits" md-placeholder="תחומי עניין"></md-chips>
-          <!-- <div class="md-layout-item md-small-size-100 md-size-33">
-            <md-field>
-              <label>טלפון מטכלי</label>
-              <md-input v-model="code" type="number"></md-input>
-            </md-field>
-          </div> -->
-          <!-- <div class="md-layout-item md-size-100">
-            <md-field maxlength="5">
-              <label>About Me</label>
-              <md-textarea v-model="aboutme"></md-textarea>
-            </md-field>
-          </div> -->
           <div class="md-layout-item md-size-100 text-right">
             <md-button class="md-raised md-warning" @click="this.handleClick">!זהו נגמר</md-button>
           </div>

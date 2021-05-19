@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content" dir="rtl">
     <div class="md-layout">
       <div
         class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33"
@@ -10,20 +10,20 @@
           :chart-type="'Line'"
           data-background-color="blue"
         >
-          <template slot="content">
-            <h4 class="title">Daily Sales</h4>
+          <template slot="content" >
+            <h4 class="title">כמות המוצרים שהועלו לשף בשבוע האחרון</h4>
             <p class="category">
               <span class="text-success"
                 ><i class="fas fa-long-arrow-alt-up"></i> 55%
               </span>
-              increase in today sales.
+              עלייה בכמות המוצרים היום
             </p>
           </template>
 
           <template slot="footer">
             <div class="stats">
               <md-icon>access_time</md-icon>
-              updated 4 minutes ago
+              התעדכן לפני 4 דקות
             </div>
           </template>
         </chart-card>
@@ -39,44 +39,24 @@
           data-background-color="red"
         >
           <template slot="content">
-            <h4 class="title">Email Subscription</h4>
+            <h4 class="title">כמות המוצרים שהועלו לשף בחודשים האחרונים</h4>
             <p class="category">
-              Last Campaign Performance
+              <span class="text-success"
+                ><i class="fas fa-long-arrow-alt-up"></i> 12%
+              </span>
+              עלייה בכמות המוצרים החודש
             </p>
           </template>
 
           <template slot="footer">
             <div class="stats">
               <md-icon>access_time</md-icon>
-              updated 10 days ago
+              התעדכן לפני 10 ימים
             </div>
           </template>
         </chart-card>
       </div>
-      <div
-        class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33"
-      >
-        <chart-card
-          :chart-data="dataCompletedTasksChart.data"
-          :chart-options="dataCompletedTasksChart.options"
-          :chart-type="'Line'"
-          data-background-color="green"
-        >
-          <template slot="content">
-            <h4 class="title">Completed Tasks</h4>
-            <p class="category">
-              Last Campaign Performance
-            </p>
-          </template>
-
-          <template slot="footer">
-            <div class="stats">
-              <md-icon>access_time</md-icon>
-              campaign sent 26 minutes ago
-            </div>
-          </template>
-        </chart-card>
-      </div>
+      
       <div
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
@@ -167,38 +147,17 @@
       <div
         class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
       >
-        <md-card>
-          <md-card-header data-background-color="orange">
-            <h4 class="title">Employees Stats</h4>
-            <p class="category">New employees on 15th September, 2016</p>
+        <md-card dir="ltr">
+          <md-card-header data-background-color="orange" dir="rtl">
+            <h4 class="title">הצוותים המובילים</h4>
+            <p class="category">הצוותים שתרמו הכי הרבה לקהילה</p>
           </md-card-header>
           <md-card-content>
             <ordered-table table-header-color="orange"></ordered-table>
           </md-card-content>
         </md-card>
       </div>
-      <div
-        class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
-      >
-        <nav-tabs-card>
-          <template slot="content">
-            <span class="md-nav-tabs-title">Tasks:</span>
-            <md-tabs class="md-success" md-alignment="left">
-              <md-tab id="tab-home" md-label="Bugs" md-icon="bug_report">
-                <nav-tabs-table></nav-tabs-table>
-              </md-tab>
-
-              <md-tab id="tab-pages" md-label="Website" md-icon="code">
-                <nav-tabs-table></nav-tabs-table>
-              </md-tab>
-
-              <md-tab id="tab-posts" md-label="server" md-icon="cloud">
-                <nav-tabs-table></nav-tabs-table>
-              </md-tab>
-            </md-tabs>
-          </template>
-        </nav-tabs-card>
-      </div>
+      
     </div>
   </div>
 </template>
@@ -207,8 +166,6 @@
 import {
   StatsCard,
   ChartCard,
-  NavTabsCard,
-  NavTabsTable,
   OrderedTable
 } from "@/components";
 
@@ -216,8 +173,6 @@ export default {
   components: {
     StatsCard,
     ChartCard,
-    NavTabsCard,
-    NavTabsTable,
     OrderedTable
   },
   data() {

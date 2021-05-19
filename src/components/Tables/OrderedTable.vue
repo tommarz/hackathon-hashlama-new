@@ -2,11 +2,10 @@
   <div>
     <md-table v-model="users" :table-header-color="tableHeaderColor">
       <md-table-row slot="md-table-row" slot-scope="{ item }">
-        <md-table-cell md-label="ID">{{ item.id }}</md-table-cell>
-        <md-table-cell md-label="Name">{{ item.name }}</md-table-cell>
-        <md-table-cell md-label="Salary">{{ item.salary }}</md-table-cell>
-        <md-table-cell md-label="Country">{{ item.country }}</md-table-cell>
-        <md-table-cell md-label="City">{{ item.city }}</md-table-cell>
+        <md-table-cell md-label="מספר סידורי">{{ item.id }}</md-table-cell>
+        <md-table-cell md-label="שם צוות">{{ item.name }}</md-table-cell>
+        <md-table-cell md-label="כמות המוצרים">{{ item.salary }}</md-table-cell>
+        <md-table-cell md-label="יחידה">{{ item.country }}</md-table-cell>
       </md-table-row>
     </md-table>
   </div>
@@ -27,30 +26,30 @@ export default {
       users: [
         {
           id: 1,
-          name: "Dakota Rice",
-          salary: "$36,738",
-          country: "Niger",
+          name: "ארטמיס",
+          salary: "11",
+          country: "מצפן",
           city: "Oud-Turnhout"
         },
         {
           id: 2,
-          name: "Minerva Hooper",
-          salary: "$23,738",
-          country: "Curaçao",
+          name: "עוצמה",
+          salary: "9",
+          country: "ממרם",
           city: "Sinaai-Waas"
         },
         {
           id: 3,
-          name: "Sage Rodriguez",
-          salary: "$56,142",
-          country: "Netherlands",
+          name: "אורניום",
+          salary: "7",
+          country: "מעוף",
           city: "Overland Park"
         },
         {
           id: 4,
-          name: "Philip Chaney",
-          salary: "$38,735",
-          country: "Korea, South",
+          name: "גסטרונום",
+          salary: "6",
+          country: "מיוחדים",
           city: "Gloucester"
         }
       ]
