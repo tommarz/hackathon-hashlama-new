@@ -5,14 +5,21 @@
     </div>
 
     <md-card-content>
-      <h6 class="category text-gray">CEO / Co-Founder</h6>
-      <h4 class="card-title">Alec Thompson</h4>
+      <h6 class="category text-gray">מצפ"ן</h6>
+      <h4 class="card-title">צוות ארטמיס</h4>
       <p class="card-description">
-        Don't be scared of the truth because we need to restart the human
-        foundation in truth And I love you like Kanye loves Kanye I love Rick
-        Owens’ bed design but the back is...
+        עוסקים בעבודה חשובה מאוד מאוד שעוזרת לביטחון המדינה. אנחנו אוהבים מאוד את תחום הפיתוח המאובטח ונהנים לקחת מוצרים באמצעות הפלטפורמה הנהדרת החדשה בשם שף
       </p>
-      <md-button class="md-round md-success">Follow</md-button>
+      <h5 class="card-title"> שם ראש הצוות: שי מירון</h5>
+      <h4 class="card-title"> טלפון אזרחי: 052-442-3000</h4>
+      <label>תחומי עניין</label>
+      <div class="md-layout md-gutter">
+    <div class="md-layout-item md-size-20"></div>
+    <div class="md-layout-item"><md-chips v-model="fruits" md-static></md-chips></div>
+    <div class="md-layout-item md-size-20"></div>
+  </div>
+       
+      <md-button class="md-round md-warning">עקוב</md-button>
     </md-card-content>
   </md-card>
 </template>
@@ -26,8 +33,14 @@ export default {
     }
   },
   data() {
-    return {};
+    return { fruits: [
+      'DevSecOps',
+      'Cloud',
+      'Fullstack',
+      'Machine Learning'
+    ],};
   }
 };
 </script>
-<style></style>
+<style scoped>
+</style>>
