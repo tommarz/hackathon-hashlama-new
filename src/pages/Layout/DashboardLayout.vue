@@ -19,6 +19,10 @@
         <md-icon>wallpaper</md-icon>
         <p>Feed</p>
       </sidebar-link>
+      <sidebar-link to="/add-product">
+        <md-icon>fiber_new</md-icon>
+        <p>Add Product</p>
+      </sidebar-link>
     </side-bar>
 
     <div class="main-panel">
@@ -31,7 +35,6 @@
       </fixed-plugin>
 
       <dashboard-content> </dashboard-content>
-
     </div>
   </div>
 </template>
@@ -41,19 +44,21 @@ import TopNavbar from "./TopNavbar.vue";
 import DashboardContent from "./Content.vue";
 import MobileMenu from "@/pages/Layout/MobileMenu.vue";
 import FixedPlugin from "./Extra/FixedPlugin.vue";
+import SidebarLink from "../../components/SidebarPlugin/SidebarLink.vue";
 
 export default {
   components: {
     TopNavbar,
     DashboardContent,
     MobileMenu,
-    FixedPlugin
+    FixedPlugin,
+    SidebarLink,
   },
   data() {
     return {
       sidebarBackground: "orange",
-      sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg")
+      sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg"),
     };
-  }
+  },
 };
 </script>
