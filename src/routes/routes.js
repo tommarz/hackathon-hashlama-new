@@ -4,7 +4,7 @@ import Dashboard from "@/pages/Dashboard.vue";
 import UserProfile from "@/pages/UserProfile.vue";
 import Feed from "@/pages/Feed.vue"
 import TableList from "@/pages/TableList.vue";
-import Typography from "@/pages/Typography.vue";
+import Product from "@/pages/Product.vue";
 import Icons from "@/pages/Icons.vue";
 import Maps from "@/pages/Maps.vue";
 import Notifications from "@/pages/Notifications.vue";
@@ -30,7 +30,13 @@ const routes = [
         path: "feed",
         name: "Feed",
         component: Feed
+      },
+      {
+        path: "product",
+        name: "Product",
+        component: Product
       }
+    
     ]
   }
 ];
