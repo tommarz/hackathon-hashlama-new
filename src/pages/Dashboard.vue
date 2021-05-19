@@ -67,7 +67,7 @@
 
           <template slot="content">
             <p class="category">devSecOps</p>
-            <h3 class="title">הפרוייקט נותן פייפליין פסיכי</h3>
+            <h3 class="title">פיפליין מאובטח</h3>
           </template>
 
           <template slot="footer">
