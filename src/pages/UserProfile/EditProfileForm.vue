@@ -10,37 +10,37 @@
         <div class="md-layout">
           <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
-              <label>שם צוות</label>
+              <label class="lbl">שם צוות</label>
               <md-input v-model="username" type="text"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
-              <label>שם יחידה</label>
+              <label class="lbl">שם יחידה</label>
               <md-input v-model="emailadress" type="email"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-100">
             <md-field>
-      <label>תיאור עשיית הצוות</label>
+      <label class="lbl">תיאור עשיית הצוות</label>
       <md-textarea v-model="textarea"></md-textarea>
     </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
-              <label>שם ראש הצוות</label>
+              <label class="lbl">שם ראש הצוות</label>
               <md-input v-model="city" type="text"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
-              <label>שם משפחת ראש הצוות</label>
+              <label class="lbl">שם משפחת ראש הצוות</label>
               <md-input v-model="country" type="text"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
-              <label>טלפון אזרחי</label>
+              <label class="lbl">טלפון אזרחי</label>
               <md-input v-model="code" type="number"></md-input>
             </md-field>
           </div>

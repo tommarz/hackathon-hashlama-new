@@ -16,7 +16,7 @@
           <div class="md-autocomplete">
             <form novalidate class="md-layout" @submit.prevent="validateSearch">
               <md-field :class="getValidationClass('search')">
-                <label for="search">חיפוש</label>
+                <label class="lbl" for="search">חיפוש</label>
                 <md-input
                   type="text"
                   name="search"

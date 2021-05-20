@@ -234,15 +234,15 @@ export default {
   align-content: center;
   align-items: center;
 }
+</style>
 
+
+<style>
 .lbl {
   width: inherit;
   text-align: right;
 }
 </style>
-
-
-
 
 <style scoped>
 .shake-on-error /deep/ .md-duplicated {
