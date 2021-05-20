@@ -4,14 +4,13 @@
       <div class="md-layout-item">
         <md-card>
           <md-card-header data-background-color="orange">
-            <h4 class="title">מוצר #1</h4>
-            <p class="category">נכתב על ידי - צוות 10 ענף תוכנה</p>
+            <h1 class="title">מוצר #1</h1>
+            <router-link to="user" class="category">
+              <p id="team-link">נכתב על ידי - צוות 10 ענף תוכנה</p>
+            </router-link>
           </md-card-header>
           <md-card-content>
             <div id="typography">
-              <div class="title">
-                <h2>מוצר #1</h2>
-              </div>
               <div class="row">
                 <div class="content-top">
                   <div class="tim-typo" id="motto">
@@ -36,13 +35,33 @@
                   </p>
                 </div>
                 <div class="tim-typo">
-                  <blockquote>
-                    <p>
-הדבר הכי טוב מאז הבטריה של הנוט 7                    </p>
-                    <small>
-                      Kanye West, 47th President of the United States
-                    </small>
-                  </blockquote>
+                  <h4> גולשים אחרים מספרים </h4>
+                  <div id="reviews">
+                    <blockquote class="review" id="review-1">
+                      <p>
+הדבר הכי טוב מאז הבטריה של הנוט 7                    
+                      </p>
+                      <small>
+                        Kanye West, 47th President of the United States
+                      </small>
+                    </blockquote>
+                    <blockquote class="review" id="review-2">
+                      <p>
+הדבר הכי טוב מאז הבטריה של הנוט 7
+                      </p>
+                      <small>
+                        Kanye West, 47th President of the United States
+                      </small>
+                    </blockquote>
+                    <blockquote class="review" id="review-3">
+                      <p>
+הדבר הכי טוב מאז הבטריה של הנוט 7
+                      </p>
+                      <small>
+                        Kanye West, 47th President of the United States
+                      </small>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,5 +105,13 @@ export default {
 
 *.md-card-header, *.md-card-content {
   text-align: right;
+}
+
+*.title, #team-link {
+  text-align: center;
+}
+
+#reviews {
+  display: flex;
 }
 </style>
