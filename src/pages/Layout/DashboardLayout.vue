@@ -5,6 +5,7 @@
     <side-bar
       :sidebar-item-color="sidebarBackground"
       :sidebar-background-image="sidebarBackgroundImage"
+      class="right"
     >
       <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/dashboard">
@@ -62,3 +63,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.right {
+  float: right;
+}
+</style>

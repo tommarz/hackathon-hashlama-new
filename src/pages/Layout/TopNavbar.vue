@@ -47,7 +47,6 @@
 
             <li class="md-list-item">
               <a
-                href="#/notifications"
                 class="md-list-item-router md-list-item-container md-button-clean dropdown"
               >
                 <div class="md-list-item-content">
@@ -62,11 +61,11 @@
                       <p class="hidden-lg hidden-md">Notifications</p>
                     </md-button>
                     <ul class="dropdown-menu dropdown-menu-right">
-                      <li><a href="#">Mike John responded to your email</a></li>
-                      <li><a href="#">You have 5 new tasks</a></li>
-                      <li><a href="#">You're now friend with Andrew</a></li>
-                      <li><a href="#">Another Notification</a></li>
-                      <li><a href="#">Another One</a></li>
+                      <li><a href="#">צוות גלובוס רוצה את מוצר הפיפליין שלך</a></li>
+                      <li><a href="#">מוצרים שאולי תאהב</a></li>
+                      <li><a href="#">!צוות ארטמיס העלה מוצר חדש</a></li>
+                      <li><a href="#">!המוצר שלך עלה בדירוג</a></li>
+                      <li><a href="#">כל הכבוד! נכנסתם לרשימת הצוותים המובילים</a></li>
                     </ul>
                   </drop-down>
                 </div>
