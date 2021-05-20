@@ -14,13 +14,19 @@
 
         <div class="md-collapse">
           <div class="md-autocomplete">
-            <md-autocomplete
-              class="search"
-              v-model="selectedEmployee"
-              :md-options="employees"
-            >
-              <label>Search...</label>
-            </md-autocomplete>
+            <form novalidate class="md-layout" @submit.prevent="validateSearch">
+              <md-field :class="getValidationClass('search')">
+                <label for="search">חיפוש</label>
+                <md-input
+                  type="text"
+                  name="search"
+                  id="search"
+                  autocomplete="search"
+                  v-model="form.search"
+                  :disabled="sending"
+                />
+              </md-field>
+            </form>
           </div>
           <md-list>
             <md-list-item href="#/dashboard">
@@ -84,21 +90,70 @@
 </template>
 
 <script>
+import { validationMixin } from "vuelidate";
+import {
+  required,
+  minLength,
+  maxLength,
+  alpha,
+} from "vuelidate/lib/validators";
+
 export default {
-  data() {
-    return {
-      selectedEmployee: null,
-      employees: [
-      
-      ]
-    };
+  mixins: [validationMixin],
+  data: () => ({
+    form: {
+      search: null,
+    },
+    searchSaved: false,
+    sending: false,
+    lastSearch: null,
+    results: [],
+  }),
+  validations: {
+    form: {
+      search: {
+        required,
+        minLength: minLength(3),
+        // alpha,
+        maxLength: maxLength(100),
+      },
+    },
   },
   methods: {
     toggleSidebar() {
       this.$sidebar.displaySidebar(!this.$sidebar.showSidebar);
-    }
-  }
+    },
+    getValidationClass(fieldName) {
+      const field = this.$v.form[fieldName];
+
+      if (field) {
+        return {
+          "md-invalid": field.$invalid && field.$dirty,
+        };
+      }
+    },
+    clearForm() {
+      this.$v.$reset();
+      this.form.search = null;
+    },
+    saveSearch() {
+      this.sending = true;
+      this.lastSearch = `${this.form.search}`;
+      this.searchSaved = true;
+      this.sending = false;
+      this.clearForm();
+      this.$router.push("feed")
+    },
+    validateSearch() {
+      this.$v.$touch();
+
+      if (!this.$v.$invalid) {
+        this.saveSearch();
+      }
+    },
+  },
 };
 </script>
+
 
 <style lang="css"></style>
