@@ -1,8 +1,9 @@
 <template>
   <div class="add-product" dir="rtl">
+    <br/>
     <form novalidate class="md-layout" @submit.prevent="validateProduct">
       <md-card class="md-layout-item md-size-50 md-small-size-100">
-        <md-card-header>
+        <md-card-header class="orange-bg">
           <div class="md-title">הוסף מוצר</div>
         </md-card-header>
 
@@ -81,7 +82,7 @@
         <md-progress-bar md-mode="indeterminate" v-if="sending" />
 
         <md-card-actions>
-          <md-button type="submit" class="md-primary" :disabled="sending"
+          <md-button type="submit" class="orange-bg" :disabled="sending"
             >הוסף מוצר</md-button
           >
         </md-card-actions>
@@ -196,6 +197,9 @@ export default {
 </script>
 
 <style scoped>
+.orange-bg {
+  background-color: orange !important;
+}
 .md-progress-bar {
   position: absolute;
   top: 0;
