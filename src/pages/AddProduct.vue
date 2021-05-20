@@ -237,6 +237,7 @@ export default {
 
 .lbl {
   width: inherit;
+  text-align: right;
 }
 </style>
 
