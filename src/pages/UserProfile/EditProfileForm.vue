@@ -46,7 +46,7 @@
           </div>
           <md-chips v-model="fruits" md-placeholder="תחומי עניין"></md-chips>
           <div class="md-layout-item md-size-100 text-right">
-            <md-button class="md-raised md-warning" @click="this.handleClick">!זהו נגמר</md-button>
+            <md-button class="md-raised md-warning" @click="this.handleClick">זהו נגמר!</md-button>
           </div>
         </div>
       </md-card-content>
