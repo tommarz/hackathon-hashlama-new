@@ -9,19 +9,19 @@
       <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/dashboard">
         <md-icon>dashboard</md-icon>
-        <p>Dashboard</p>
+        <p>מרכז שליטה</p>
       </sidebar-link>
       <sidebar-link to="/user">
         <md-icon>person</md-icon>
-        <p>User Profile</p>
+        <p>החשבון שלי</p>
       </sidebar-link>
       <sidebar-link to="/feed">
         <md-icon>wallpaper</md-icon>
-        <p>Feed</p>
+        <p>קטלוג מוצרים</p>
       </sidebar-link>
       <sidebar-link to="/add-product">
         <md-icon>fiber_new</md-icon>
-        <p>Add Product</p>
+        <p>הוסף מוצר</p>
       </sidebar-link>
     </side-bar>
 
