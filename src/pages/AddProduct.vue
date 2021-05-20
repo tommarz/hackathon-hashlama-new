@@ -11,7 +11,7 @@
           <div class="md-layout md-gutter">
             <div class="md-layout-item md-small-size-100">
               <md-field :class="getValidationClass('productName')">
-                <label for="product-name">שם המוצר</label>
+                <label class="lbl" for="product-name">שם המוצר</label>
                 <md-input
                   name="product-name"
                   id="product-name"
@@ -55,7 +55,7 @@
           </div>
 
           <md-field :class="getValidationClass('description')">
-            <label for="description">תיאור המוצר</label>
+            <label class="lbl" for="description">תיאור המוצר</label>
             <md-input
               type="text"
               name="description"
@@ -233,6 +233,10 @@ export default {
   align-self: center;
   align-content: center;
   align-items: center;
+}
+
+.lbl {
+  width: inherit;
 }
 </style>
 
